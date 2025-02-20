@@ -1,0 +1,22 @@
+@mixin button {
+  padding: 10px 20px;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin card-shadow {
+  box-shadow: $card-shadow;
+}

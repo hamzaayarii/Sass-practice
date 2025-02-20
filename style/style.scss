@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $main-font;
+    background-color: #f5f5f5;
+    @include center;
+    min-height: 100vh;
+}
+
+.profile-card {
+    background: $white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+    .profile-img {
+        width: 100%;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .profile-info {
+        padding: $space;
+        text-align: center;
+
+        h2 {
+            color: $dark;
+            font-size: $title-size;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $gray;
+            margin-bottom: $space;
+        }
+
+        .btn-primary {
+            @include button;
+        }
+    }
+}
